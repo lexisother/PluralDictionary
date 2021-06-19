@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/index.css";
 
-const App = () => {
+const App = (): JSX.Element => {
     return (
         <>
             <div id="wrapper">

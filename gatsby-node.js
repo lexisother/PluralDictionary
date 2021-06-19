@@ -7,9 +7,9 @@ const path = require("path");
 module.exports = {
     createPages: async ({actions, graphql}) => {
         actions.createPage({
-            path: '/',
-            component: path.resolve('./src/Home.tsx'),
+            path: "/",
+            component: path.resolve("./src/Home.tsx"),
             context: null
-        })
+        });
     }
-}
+};

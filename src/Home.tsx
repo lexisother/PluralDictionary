@@ -1,48 +1,28 @@
 import React from "react";
+import Page from "./shared/Page";
 import "./css/index.css";
 
 const App = (): JSX.Element => {
     return (
-        <>
-            <div id="wrapper">
-                <div id="main">
-                    <div className="inner">
-                        <header id="header">
-                            <div id="image01" className="image">
-                                <img
-                                    src="https://system-dictionary.carrd.co/assets/images/image01.jpg?v97891360700951"
-                                    alt=""
-                                />
-                            </div>
-                            <h1 id="text01">The Plural Dictionary</h1>
-                        </header>
-
-                        <footer id="footer">
-                            <hr id="divider01" />
-                            <nav>
-                                <ul id="buttons01" className="buttons">
-                                    <li>
-                                        <a className="button n01" href="/">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="button n01" href="/about">
-                                            About
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="button n01" href="/users">
-                                            Users
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </>
+        <Page>
+            <p id="text04">
+                <span>
+                    Hello! So, there's a <em>lot</em> of terms in the plural/multiple/system community! Not just on
+                    Tumblr, but Twitter and Reddit.
+                </span>
+                <br />{" "}
+                <span>
+                    We're trying our best to add as much as we can to this dictionary, for anyone to find. I know we've
+                    had trouble finding the meaning of some terms, even searching, so hopefully this will help!{" "}
+                </span>
+                <br /> <br />{" "}
+                <span>
+                    Disclaimer: Nothing on this website was written by me. All content was taken from the{" "}
+                    <a href="https://system-dictionary.carrd.co/">original site</a>, I've only rewritten it in React.
+                </span>
+                <br /> <br /> <span>All flags are above their definition.</span>
+            </p>
+        </Page>
     );
 };
 

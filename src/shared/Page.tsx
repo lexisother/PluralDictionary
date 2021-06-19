@@ -72,13 +72,38 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="button n01" href="/about">
-                                        About
+                                    <a className="button n01" href="/basic-terms">
+                                        Basic Terms
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="button n01" href="/users">
-                                        Users
+                                    <a className="button n01" href="/origins">
+                                        Origins
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="button n01" href="/member-types">
+                                        Member Types
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="button n01" href="/system-types">
+                                        System Types
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="button n01" href="/structure">
+                                        Structure
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="button n01" href="/mogai">
+                                        Mogai
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="button n01" href="/more">
+                                        More
                                     </a>
                                 </li>
                             </ul>

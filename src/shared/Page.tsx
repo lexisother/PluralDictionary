@@ -92,12 +92,12 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                         System Types
                                     </a>
                                 </li>
-                                {/*
                                 <li>
                                     <a className="button n01" href="/structure">
                                         Structure
                                     </a>
                                 </li>
+                                {/*
                                 <li>
                                     <a className="button n01" href="/mogai">
                                         Mogai

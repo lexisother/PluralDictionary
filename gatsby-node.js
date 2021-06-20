@@ -31,5 +31,10 @@ module.exports = {
             component: path.resolve("./src/pages/System-Types.tsx"),
             context: null
         });
+        actions.createPage({
+            path: "/structure",
+            component: path.resolve("./src/pages/Structure.tsx"),
+            context: null
+        });
     }
 };

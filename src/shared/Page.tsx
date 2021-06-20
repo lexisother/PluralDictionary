@@ -87,12 +87,12 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                         Member Types
                                     </a>
                                 </li>
-                                {/*
                                 <li>
                                     <a className="button n01" href="/system-types">
                                         System Types
                                     </a>
                                 </li>
+                                {/*
                                 <li>
                                     <a className="button n01" href="/structure">
                                         Structure

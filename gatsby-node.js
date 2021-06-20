@@ -26,5 +26,10 @@ module.exports = {
             component: path.resolve("./src/pages/Member-Types.tsx"),
             context: null
         });
+        actions.createPage({
+            path: "/system-types",
+            component: path.resolve("./src/pages/System-Types.tsx"),
+            context: null
+        });
     }
 };

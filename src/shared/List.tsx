@@ -5,6 +5,7 @@ import {FiLink} from "react-icons/fi";
 const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): JSX.Element => {
     return (
         <>
+            {separate && <hr id="divider01" />}
             <div className="link" id={item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}>
                 {item.images && (
                     <>
@@ -31,7 +32,7 @@ const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): J
                 ))}{" "}
                 {item.url && <a href={item.url}>♡</a>}
             </div>
-            {separate ? <hr id="divider01" /> : <br />}
+            {!separate && <br />}
         </>
     );
 };

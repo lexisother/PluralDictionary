@@ -21,5 +21,10 @@ module.exports = {
             component: path.resolve("./src/pages/Origins.tsx"),
             context: null
         });
+        actions.createPage({
+            path: "/member-types",
+            component: path.resolve("./src/pages/Member-Types.tsx"),
+            context: null
+        });
     }
 };

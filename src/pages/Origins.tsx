@@ -12,7 +12,6 @@ export default function OriginsPage(): JSX.Element {
                 systems like to use it for individual system mates however, so it's best not to make general statements
                 about other systems.
             </p>
-            <hr id="divider01" />
             <p id="text02">
                 <List list={Origins} separate={true} />
             </p>

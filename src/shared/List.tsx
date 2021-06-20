@@ -2,9 +2,25 @@ import React from "react";
 import reactStringReplace from "react-string-replace";
 import {FiLink} from "react-icons/fi";
 
-const ListItem = ({item}: {item: Data}): JSX.Element => {
+const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): JSX.Element => {
     return (
         <>
+            {item.images && (
+                <>
+                <div id="gallery01" className="gallery">
+                    <div className="inner">
+                        <ul>
+                            {item.images.map((url) => (
+                                <li>
+                                    <img src={url} alt="" />
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <br />
+                </>
+            )}
             <div className="link" id={item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}>
                 <a className="linkIcon" href={`#${item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}`}>
                     <FiLink />
@@ -15,18 +31,19 @@ const ListItem = ({item}: {item: Data}): JSX.Element => {
                 ))}{" "}
                 {item.url && <a href={item.url}>♡</a>}
             </div>
-            <br />
+            {separate ? <hr id="divider01" /> : <br />}
         </>
     );
 };
 
-export default function List({list}: {list: unknown[]}): JSX.Element {
+export default function List({list, separate = false}: {list: unknown[]; separate?: boolean}): JSX.Element {
     return (
         <>
             {/* If there's no list, provide an empty array */}
-            {(list || []).map((item: any) => (
-                <ListItem item={item} />
-            ))}
+            {/* Make sure to add the separate prop to ListItem if it's present on List */}
+            {separate
+                ? (list || []).map((item: any) => <ListItem item={item} separate={true} />)
+                : (list || []).map((item: any) => <ListItem item={item} />)}
         </>
     );
 }
@@ -36,4 +53,5 @@ export interface Data {
     desc: string;
     link?: string;
     url?: string;
+    images?: string[];
 }

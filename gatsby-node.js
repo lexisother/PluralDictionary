@@ -16,5 +16,10 @@ module.exports = {
             component: path.resolve("./src/pages/Basic-Terms.tsx"),
             context: null
         });
+        actions.createPage({
+            path: "/origins",
+            component: path.resolve("./src/pages/Origins.tsx"),
+            context: null
+        });
     }
 };

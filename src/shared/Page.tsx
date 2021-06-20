@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import "../css/index.css";
 
 interface MetaProps {
     title?: string;
@@ -76,7 +77,7 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                         Basic Terms
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a className="button n01" href="/origins">
                                         Origins
                                     </a>
@@ -105,7 +106,7 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                     <a className="button n01" href="/more">
                                         More
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </nav>
                     </footer>

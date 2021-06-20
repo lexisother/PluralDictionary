@@ -1,6 +1,5 @@
 import React from "react";
 import Page from "./shared/Page";
-import "./css/index.css";
 
 const App = (): JSX.Element => {
     return (

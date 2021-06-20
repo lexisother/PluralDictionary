@@ -60,7 +60,8 @@ export const JobsAges: Data[] = [
     },
     {
         name: "Main",
-        desc: "Different from host, in they don’t actually have to front that much. The main people or person that everyone basically draws energy from. Usually someone that nearly everyone in system thinks of as a Main Person. There can be multiple mains."
+        desc: "Different from host, in they don’t actually have to front that much. The main people or person that everyone basically draws energy from. Usually someone that nearly everyone in system thinks of as a Main Person. There can be multiple mains.",
+        link: "maintype"
     },
     {
         name: "Memory Holder",

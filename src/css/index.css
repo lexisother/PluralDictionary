@@ -5,6 +5,20 @@
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,400italic,700,700italic);
 
+.link .linkIcon {
+    visibility: hidden;
+}
+
+.link:hover .linkIcon {
+    visibility: visible;
+}
+
+.link:target {
+    background-color: #4b4b7a;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+}
+
 html,
 body,
 div,

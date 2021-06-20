@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../shared/Page";
 import List from "../shared/List";
-import {Origins} from '../data/origins';
+import {Origins} from "../data/origins";
 
 export default function OriginsPage(): JSX.Element {
     return (
@@ -12,8 +12,9 @@ export default function OriginsPage(): JSX.Element {
                 systems like to use it for individual system mates however, so it's best not to make general statements
                 about other systems.
             </p>
+            <hr id="divider01" />
             <p id="text02">
-            <List list={Origins} separate={true} />
+                <List list={Origins} separate={true} />
             </p>
         </Page>
     );

@@ -7,18 +7,18 @@ const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): J
         <>
             {item.images && (
                 <>
-                <div id="gallery01" className="gallery">
-                    <div className="inner">
-                        <ul>
-                            {item.images.map((url) => (
-                                <li>
-                                    <img src={url} alt="" />
-                                </li>
-                            ))}
-                        </ul>
+                    <div id="gallery01" className="gallery">
+                        <div className="inner">
+                            <ul>
+                                {item.images.map((url) => (
+                                    <li>
+                                        <img src={url} alt="" />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <br />
+                    <br />
                 </>
             )}
             <div className="link" id={item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}>

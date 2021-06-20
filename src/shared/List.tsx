@@ -5,23 +5,23 @@ import {FiLink} from "react-icons/fi";
 const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): JSX.Element => {
     return (
         <>
-            {item.images && (
-                <>
-                    <div id="gallery01" className="gallery">
-                        <div className="inner">
-                            <ul>
-                                {item.images.map((url) => (
-                                    <li>
-                                        <img src={url} alt="" />
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <br />
-                </>
-            )}
             <div className="link" id={item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}>
+                {item.images && (
+                    <>
+                        <div id="gallery01" className="gallery">
+                            <div className="inner">
+                                <ul>
+                                    {item.images.map((url) => (
+                                        <li>
+                                            <img src={url} alt="" />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        <br />
+                    </>
+                )}
                 <a className="linkIcon" href={`#${item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}`}>
                     <FiLink />
                 </a>{" "}

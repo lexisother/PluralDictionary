@@ -22,12 +22,12 @@ const ListItem = ({item}: {item: Data}): JSX.Element => {
 
 export default function List({list}: {list: unknown[]}): JSX.Element {
     return (
-        <ul>
+        <>
             {/* If there's no list, provide an empty array */}
             {(list || []).map((item: any) => (
                 <ListItem item={item} />
             ))}
-        </ul>
+        </>
     );
 }
 

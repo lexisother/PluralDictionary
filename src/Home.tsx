@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "./shared/Page";
 
-const App = (): JSX.Element => {
+export default function HomePage(): JSX.Element {
     return (
         <Page>
             <p id="text04">
@@ -23,6 +23,4 @@ const App = (): JSX.Element => {
             </p>
         </Page>
     );
-};
-
-export default App;
+}

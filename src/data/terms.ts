@@ -1,6 +1,6 @@
-import {Data} from "../../shared/List";
+import {Data} from "../shared/List";
 
-export const test: Data[] = [
+export const terms: Data[] = [
     {
         name: "Alter",
         desc: "The clinical term for someone in a system."

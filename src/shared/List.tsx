@@ -1,5 +1,7 @@
 import React from "react";
-import reactStringReplace from "react-string-replace";
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import {FiLink} from "react-icons/fi";
 
 const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): JSX.Element => {
@@ -23,13 +25,14 @@ const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): J
                         <br />
                     </>
                 )}
-                <a className="linkIcon" href={`#${item.link ? item.link : item.name.toLowerCase().replace(" ", "-")}`}>
+                <a
+                    className="linkIcon"
+                    href={`#${item.link ? item.link : item.name.toLowerCase().replaceAll(" ", "-")}`}
+                >
                     <FiLink />
                 </a>{" "}
-                <strong>{item.name}</strong> :{" "}
-                {reactStringReplace(item.desc, "<br />", () => (
-                    <br />
-                ))}{" "}
+                <strong>{item.name}</strong>:{" "}
+                <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[gfm]} children={item.desc} />{" "}
                 {item.url && <a href={item.url}>♡</a>}
             </div>
             {!separate && <br />}

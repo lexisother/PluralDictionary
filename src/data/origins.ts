@@ -33,12 +33,12 @@ export const Origins: Data[] = [
     },
     {
         name: "Mixed Origin",
-        desc: "See Polygenic",
+        desc: "See [Polygenic](#polygenic)",
         images: ["https://system-dictionary.carrd.co/assets/images/image06.jpg?v97891360700951"]
     },
     {
         name: "Multigenic",
-        desc: "See Polygenic",
+        desc: "See [Polygenic](#polygenic)",
         images: ["https://system-dictionary.carrd.co/assets/images/image05.jpg?v97891360700951"]
     },
     {

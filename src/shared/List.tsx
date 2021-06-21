@@ -27,7 +27,7 @@ const ListItem = ({item, separate = false}: {item: Data; separate?: boolean}): J
                 )}
                 <a
                     className="linkIcon"
-                    href={`#${item.link ? item.link : item.name.toLowerCase().replaceAll(" ", "-")}`}
+                    href={`#${item.link ? item.link : item.name.toLowerCase().replace(/ /g, "-")}`}
                 >
                     <FiLink />
                 </a>{" "}

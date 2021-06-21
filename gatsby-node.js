@@ -36,5 +36,10 @@ module.exports = {
             component: path.resolve("./src/pages/Structure.tsx"),
             context: null
         });
+        actions.createPage({
+            path: "/more",
+            component: path.resolve("./src/pages/More.tsx"),
+            context: null
+        });
     }
 };

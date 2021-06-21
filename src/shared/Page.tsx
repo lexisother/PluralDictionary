@@ -97,17 +97,11 @@ const Page = ({children, ...props}: PageProps): JSX.Element => {
                                         Structure
                                     </a>
                                 </li>
-                                {/*
-                                <li>
-                                    <a className="button n01" href="/mogai">
-                                        Mogai
-                                    </a>
-                                </li>
                                 <li>
                                     <a className="button n01" href="/more">
                                         More
                                     </a>
-                                </li> */}
+                                </li>
                             </ul>
                         </nav>
                     </footer>
